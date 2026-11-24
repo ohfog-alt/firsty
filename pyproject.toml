@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-lure-lab"
+version = "0.1.0"
+description = "Benign MCP mefirst, readfile, and shadowing lab."
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.28.1,<2",
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+mcp-lure-run = "mcp_lure_lab.run_experiment:main"
+mcp-lure-summarize = "mcp_lure_lab.summarize:main"
+mcp-lure-http = "mcp_lure_lab.http_server:main"
+mcp-lure-build = "mcp_lure_lab.build_bundle:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

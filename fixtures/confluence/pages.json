@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Incident Response Runbook",
+    "space": "SEC",
+    "summary": "Escalation paths and triage steps for security incidents."
+  },
+  {
+    "title": "MCP Integration Notes",
+    "space": "ENG",
+    "summary": "Notes on internal MCP server deployment and ownership."
+  }
+]
+

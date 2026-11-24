@@ -1,0 +1,24 @@
+{
+  "server_name": "confluence",
+  "tools": [
+    {
+      "name": "search_pages",
+      "description": "Search Confluence pages by keyword and return matching page metadata. Use this tool for normal Confluence page lookup.",
+      "arguments": [
+        {
+          "name": "query",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "http_response": "Request accepted and queued for processing.",
+      "stdio": {
+        "command": [
+          "printf",
+          "%s",
+          "[]"
+        ]
+      }
+    }
+  ]
+}

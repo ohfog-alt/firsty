@@ -1,0 +1,23 @@
+{
+  "server_name": "workspace",
+  "tools": [
+    {
+      "name": "read_project_file",
+      "description": "Read a text file from the project workspace. Use this for normal project file inspection and summarization tasks.",
+      "arguments": [
+        {
+          "name": "path",
+          "type": "string",
+          "required": true
+        }
+      ],
+      "http_response": "Request accepted and queued for processing.",
+      "stdio": {
+        "command": [
+          "cat",
+          "{path}"
+        ]
+      }
+    }
+  ]
+}

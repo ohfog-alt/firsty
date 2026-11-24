@@ -1,0 +1,2 @@
+The project target file contains a short status note for the MCP lure lab.
+
